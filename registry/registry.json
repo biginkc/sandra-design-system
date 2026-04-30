@@ -1,0 +1,134 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "@bmh/registry",
+  "homepage": "https://github.com/bmh-group/design-system",
+  "description": "BMH-specific shadcn registry items — Warm Paper / Organic Utility component variants for Sandra CRM, Sandra University, and Sandra Practice.",
+  "items": [
+    {
+      "name": "status-chip",
+      "type": "registry:component",
+      "title": "Status Chip",
+      "description": "6-hue semantic status pill. Replying / Hot / New / Contacted / Cold / Dead. Fully pill, text-[11px] font-black uppercase tracking-tighter. Used for lead status, score buckets, lesson states.",
+      "files": [
+        {
+          "path": "registry/status-chip/status-chip.tsx",
+          "type": "registry:component",
+          "target": "components/ui/status-chip.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "metric-card",
+      "type": "registry:component",
+      "title": "Metric Card",
+      "description": "Bento-grid stat card with icon halo, big number, optional delta badge, and description. Tone enum (healthy / warning / caution / info / critical) drives color via the alert palette tokens.",
+      "files": [
+        {
+          "path": "registry/metric-card/metric-card.tsx",
+          "type": "registry:component",
+          "target": "components/ui/metric-card.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "brand-lockup",
+      "type": "registry:component",
+      "title": "Brand Lockup",
+      "description": "Sidebar brand lockup — square mark + two-line product name + label-caps sub-label. Designed to drop inside a shadcn SidebarMenuButton size='lg' so it auto-collapses to icon-only.",
+      "files": [
+        {
+          "path": "registry/brand-lockup/brand-lockup.tsx",
+          "type": "registry:component",
+          "target": "components/ui/brand-lockup.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "search-input-pill",
+      "type": "registry:component",
+      "title": "Search Input (pill)",
+      "description": "Pill-shaped search input with a magnifying-glass icon. Stone-50 fill, no border, focus ring uses the foreground/ring token. Distinct from the standard rectangular Input — used for filter bars and command-style search.",
+      "files": [
+        {
+          "path": "registry/search-input-pill/search-input-pill.tsx",
+          "type": "registry:component",
+          "target": "components/ui/search-input-pill.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": []
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:component",
+      "title": "Avatar Group",
+      "description": "Overlapping circular avatars with +N overflow chip. Supports image avatars and initials fallbacks. Two sizes (sm/md). Used in toolbars and filter strips.",
+      "files": [
+        {
+          "path": "registry/avatar-group/avatar-group.tsx",
+          "type": "registry:component",
+          "target": "components/ui/avatar-group.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "fab",
+      "type": "registry:component",
+      "title": "Floating Action Button",
+      "description": "Bottom-right floating action button. The single documented exception to the no-shadow rule (shadow-2xl is intentional for visual lift). Required aria-label enforced by the type.",
+      "files": [
+        {
+          "path": "registry/fab/fab.tsx",
+          "type": "registry:component",
+          "target": "components/ui/fab.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "circular-pagination",
+      "type": "registry:component",
+      "title": "Circular Pagination",
+      "description": "Page-number strip with chevrons and circular buttons. Includes ellipsis logic for long ranges (skipped when totalPages ≤ 5). Renders as a semantic <nav> with proper aria-current on the active page.",
+      "files": [
+        {
+          "path": "registry/circular-pagination/circular-pagination.tsx",
+          "type": "registry:component",
+          "target": "components/ui/circular-pagination.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": []
+    },
+    {
+      "name": "inverted-highlight-card",
+      "type": "registry:component",
+      "title": "Inverted Highlight Card",
+      "description": "Dark-bg metric card for spotlight stats (Pipeline Value, headline KPIs). Inverted color scheme with optional decorative blur orbs and an inline white-on-dark CTA. Used to differentiate one tile in a bento grid.",
+      "files": [
+        {
+          "path": "registry/inverted-highlight-card/inverted-highlight-card.tsx",
+          "type": "registry:component",
+          "target": "components/ui/inverted-highlight-card.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    }
+  ],
+  "_meta": {
+    "synthesizedFrom": "/Users/jarradhenry/Sites/Sandra/src/app/design-preview/leads-stitch/page.tsx",
+    "tokenSource": "@bmh/tokens (./tokens/theme.css)",
+    "lastUpdated": "2026-04-30",
+    "totalLines": 697
+  }
+}
