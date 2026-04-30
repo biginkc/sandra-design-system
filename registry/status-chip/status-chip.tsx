@@ -4,7 +4,7 @@
 // Used in: Sandra CRM (lead status), Sandra Practice (score chips, mapped
 // from rubric percentages), Sandra University (lesson completion states).
 //
-// Depends on: @bmh/tokens for the --status-* CSS variables. Consumes the
+// Depends on: @sandra/tokens for the --status-* CSS variables. Consumes the
 // `bg-status-{state}-{bg,fg,border}` Tailwind utilities exposed via
 // @theme inline in tokens/theme.css.
 //

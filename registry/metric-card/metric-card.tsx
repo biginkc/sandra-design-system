@@ -5,7 +5,7 @@
 // Used in: Sandra CRM (pipeline metrics), Sandra Practice (rubric
 // dashboards), Sandra University (cohort progress).
 //
-// Depends on: @bmh/tokens for `--alert-*` CSS variables. The icon
+// Depends on: @sandra/tokens for `--alert-*` CSS variables. The icon
 // halo uses the alert color at 10% opacity; the delta badge uses
 // the same color at full strength.
 

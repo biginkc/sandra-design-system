@@ -1,4 +1,4 @@
-/* @bmh/tokens — Warm Paper / Organic Utility design tokens
+/* @sandra/tokens — Warm Paper / Organic Utility design tokens
  *
  * Single source of truth for visual identity across:
  *   - Sandra CRM      (~/Sites/Sandra)
@@ -7,7 +7,7 @@
  *
  * Consume by importing in your app's globals.css:
  *   @import "tailwindcss";
- *   @import "@bmh/tokens/theme.css";
+ *   @import "@sandra/tokens/theme.css";
  *
  * Synthesized from:
  *   - Stitch source: stitch_wholesale_real_estate_crm/{DESIGN.md, code.html}

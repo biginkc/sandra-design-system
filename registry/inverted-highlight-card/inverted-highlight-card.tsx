@@ -5,7 +5,7 @@
 // Used in: Sandra CRM (pipeline value), Sandra University (lesson highlight),
 // Sandra Practice (streak / forecast cards).
 //
-// Depends on: @bmh/tokens for --primary / --primary-foreground. Inverts the
+// Depends on: @sandra/tokens for --primary / --primary-foreground. Inverts the
 // page palette — dark surface, light ink, with a white-on-dark pill CTA that
 // inverts back to primary-on-light.
 

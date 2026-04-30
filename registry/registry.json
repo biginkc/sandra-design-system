@@ -1,6 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "@bmh/registry",
+  "name": "@sandra/registry",
   "homepage": "https://github.com/bmh-group/design-system",
   "description": "BMH-specific shadcn registry items — Warm Paper / Organic Utility component variants for Sandra CRM, Sandra University, and Sandra Practice.",
   "items": [
@@ -127,7 +127,7 @@
   ],
   "_meta": {
     "synthesizedFrom": "/Users/jarradhenry/Sites/Sandra/src/app/design-preview/leads-stitch/page.tsx",
-    "tokenSource": "@bmh/tokens (./tokens/theme.css)",
+    "tokenSource": "@sandra/tokens (./tokens/theme.css)",
     "lastUpdated": "2026-04-30",
     "totalLines": 697
   }

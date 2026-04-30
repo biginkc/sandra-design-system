@@ -1,5 +1,5 @@
 {
-  "name": "@bmh/tokens",
+  "name": "@sandra/tokens",
   "version": "0.1.0",
   "description": "BMH Group Warm Paper / Organic Utility design tokens — shared CSS variables for Sandra CRM, Sandra University, and Sandra Practice.",
   "private": true,

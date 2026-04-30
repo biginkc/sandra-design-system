@@ -11,11 +11,11 @@ All three apps run **Next.js 16 + React 19 + Tailwind v4 + shadcn 4** and share 
 ## Layers
 
 ```
-LAYER 1 — @bmh/tokens                          ✅ shipped
+LAYER 1 — @sandra/tokens                          ✅ shipped
   CSS variables for color, typography, radius.
   264-line theme.css. 50+ tokens. Light + dark.
 
-LAYER 2 — @bmh/registry                        ✅ shipped (8 components)
+LAYER 2 — @sandra/registry                        ✅ shipped (8 components)
   shadcn custom registry hosting BMH component variants:
     • StatusChip                 — 6-hue semantic status pill
     • MetricCard                 — bento-grid stat card with tone
@@ -38,7 +38,7 @@ In each app's `src/app/globals.css`:
 ```css
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "@bmh/tokens/theme.css";
+@import "@sandra/tokens/theme.css";
 
 @custom-variant dark (&:is(.dark *));
 ```
@@ -53,7 +53,7 @@ Until this is published to a registry, each app references it via npm `file:` pr
 // In each consuming app's package.json
 {
   "dependencies": {
-    "@bmh/tokens": "file:../bmh-design-system"
+    "@sandra/tokens": "file:../sandra-design-system"
   }
 }
 ```
