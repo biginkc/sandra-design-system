@@ -53,12 +53,12 @@ Until this is published to a registry, each app references it via npm `file:` pr
 // In each consuming app's package.json
 {
   "dependencies": {
-    "@sandra/tokens": "file:../sandra-design-system"
+    "@sandra/tokens": "file:../Sandra Design System"
   }
 }
 ```
 
-Then `npm install` in the app picks it up.
+Then `npm install` in the app picks it up. (Yes, the path has spaces — matches the sibling folder convention `~/Sites/Sandra`, `~/Sites/Sandra Practice`, `~/Sites/Sandra University`. npm handles spaces fine in file: refs.)
 
 ### Required app-side setup
 
