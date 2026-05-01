@@ -123,6 +123,21 @@
       ],
       "dependencies": [],
       "registryDependencies": []
+    },
+    {
+      "name": "sidebar-nav",
+      "type": "registry:component",
+      "title": "Sidebar Nav",
+      "description": "BMH primary-nav rail. Active items use a 4px solid left-border (no fill, no pill) — the Warm Paper hairline-accent pattern. Exports `<SidebarNav>` (nav landmark wrapper), `<SidebarNavItem>` (styled anchor row), and `sidebarNavItemClassName()` for composing with framework `<Link>` components without nesting anchors.",
+      "files": [
+        {
+          "path": "registry/sidebar-nav/sidebar-nav.tsx",
+          "type": "registry:component",
+          "target": "components/ui/sidebar-nav.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
     }
   ],
   "_meta": {

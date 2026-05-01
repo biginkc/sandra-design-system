@@ -15,7 +15,7 @@ LAYER 1 — @sandra/tokens                          ✅ shipped
   CSS variables for color, typography, radius.
   264-line theme.css. 50+ tokens. Light + dark.
 
-LAYER 2 — @sandra/registry                        ✅ shipped (8 components)
+LAYER 2 — @sandra/registry                        ✅ shipped (9 components)
   shadcn custom registry hosting BMH component variants:
     • StatusChip                 — 6-hue semantic status pill
     • MetricCard                 — bento-grid stat card with tone
@@ -25,6 +25,7 @@ LAYER 2 — @sandra/registry                        ✅ shipped (8 components)
     • Fab                        — floating action button
     • CircularPagination         — page strip with ellipsis logic
     • InvertedHighlightCard      — dark-bg spotlight tile
+    • SidebarNav                 — primary-nav rail w/ left-border active
 
 LAYER 3 — Per-app shells
   Each app composes Layers 1 + 2 with its own routes, server actions,
