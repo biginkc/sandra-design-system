@@ -79,6 +79,54 @@ export default function RootLayout({ children }) {
 }
 ```
 
+## Adding a new consumer
+
+End-to-end checklist for wiring a fresh app (or a sibling repo) to `@sandra/tokens`:
+
+1. **Add the dependency** to the consuming app's `package.json`:
+   ```jsonc
+   {
+     "dependencies": {
+       "@sandra/tokens": "file:../Sandra Design System"
+     }
+   }
+   ```
+   Use a relative path if the consumer is a sibling folder (`~/Sites/*`), or an absolute path otherwise. Spaces in the path are fine.
+
+2. **Install** to materialize the symlink:
+   ```bash
+   npm install
+   ```
+   Verify it worked:
+   ```bash
+   ls -la node_modules/@sandra/tokens
+   # should be a symlink → ../../../Sandra Design System
+   ```
+
+3. **Import in `globals.css`** — after Tailwind, before any custom variants:
+   ```css
+   @import "tailwindcss";
+   @import "tw-animate-css";
+   @import "@sandra/tokens/theme.css";
+
+   @custom-variant dark (&:is(.dark *));
+   ```
+
+4. **Remove competing `:root` / `.dark` blocks** from the consuming app's `globals.css`. `@sandra/tokens` is the sole owner of those tokens — if the app also defines them locally, the cascade wins/loses unpredictably. Leave a breadcrumb comment so future-you doesn't re-add them:
+   ```css
+   /* No :root or .dark blocks here — all owned by @sandra/tokens. */
+   ```
+
+5. **Wire the fonts** in `layout.tsx` (see [Required app-side setup](#required-app-side-setup) above). The token package declares the Tailwind aliases; the consuming app loads the actual font files.
+
+6. **Smoke test** — render any element using a token-driven utility (`bg-primary`, `text-foreground`, `bg-status-hot`) and confirm both light and dark themes resolve.
+
+### Caveats
+
+- The package is `"private": true`. To publish to npm later, flip that flag and add a `repository` field. Until then, all consumers must use `file:` protocol.
+- `file:` references are **path-coupled** — moving either the consuming repo or `Sandra Design System` to a different relative location breaks `npm install` until the path is updated.
+- Layer 2 (registry components) is **not** in `package.exports` yet. Only `theme.css` is consumable via this package. Components are added per-app with `npx shadcn add` against `registry/registry.json`.
+
 ## What's in `theme.css`
 
 | Section | Tokens |
