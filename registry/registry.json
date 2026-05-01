@@ -138,6 +138,21 @@
       ],
       "dependencies": [],
       "registryDependencies": []
+    },
+    {
+      "name": "data-table-shell",
+      "type": "registry:component",
+      "title": "Data Table Shell",
+      "description": "Rounded-2xl bordered container + tinted footer strip that frame a shadcn `<Table>` as a card. Exports `<DataTableShell>` (outer chrome with overflow clip for shared rounded corners) and `<DataTableFooter>` (justify-between strip for `Showing X of Y` + pagination). Layout primitives only — does not re-implement Table headers/cells, since the deployed shadcn Table already carries BMH label-caps + generous padding.",
+      "files": [
+        {
+          "path": "registry/data-table-shell/data-table-shell.tsx",
+          "type": "registry:component",
+          "target": "components/ui/data-table-shell.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
     }
   ],
   "_meta": {
